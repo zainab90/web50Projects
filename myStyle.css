@@ -9,6 +9,10 @@ font-family: arial,sans-serif;
 }
 a{
     text-decoration: none;
+    color: #222;
+}
+a:hover{
+    text-decoration: underline;
 }
 .container{
 display:flex;
@@ -21,7 +25,7 @@ max-width:100%;
 }
 
 .row-0{
-height: 12%;
+height: 17%;
     display: flex;
     justify-content: right;
     align-items: flex-start;
@@ -30,7 +34,7 @@ height: 12%;
 }
 
 .row-0 a{
-    padding:15px 10px;
+    padding:15px;
 }
 
 .row-1{
@@ -46,6 +50,7 @@ height: 15%;
     max-height: 100%;
     max-width:272px ;
     height:92px ;
+    
 
 }
 
@@ -53,8 +58,8 @@ height: 15%;
 
 
 .row-2{
-height: 55%;  
-  width:35%;
+height: 50%;  
+  width:40%;
 padding: 15px;
     text-align: center;
     display: flex;
@@ -65,7 +70,7 @@ padding: 15px;
 }
 .in-txt:hover{
 
-    box-shadow: 1px 1px #888, -1px -1px #888 ;
+    box-shadow: 1px 1px 3px #dfe1e5, -1px -1px 3px #dfe1e5 ;
 
 }
 .row-2 .btn-row, .ad-row2 .btn-row{
@@ -73,8 +78,27 @@ padding: 15px;
     flex-direction:row ;
     justify-content: space-around;
     align-items:center ;
-    padding: 12px;
+    width:50%;
+    padding: 15px 5px 0px 5px;
+    
 }
+
+
+.row-2 .offer-row{
+    display:flex;
+    flex-direction:row ;
+    justify-content: center;
+    align-items:center ;
+    width:50%;
+    padding: 10px 5px;
+    font-size: small;
+}
+
+
+.row-2 .offer-row .off-lang{
+    text-align: left;
+}
+
 .row-2 .in-txt{
 background-color: transparent;
 display: flex;
@@ -84,6 +108,16 @@ align-items:center ;
 border:1px solid #dfe1e5;
 width:100%;
 }
+
+
+.row-2 .in-txt i {
+    padding: 5px;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+
+
 .in-txt input[type=text]{
     outline: none;
     border:none;
@@ -109,24 +143,36 @@ width:100%;
     cursor: pointer;
     user-select: none;
 
-
-
-
 }
 
+.offer-row div{
+    color: #3c4043;
+    line-height: 28px;
+    width:50%;
+ 
+}
+
+.offer-row div > a{
+    color: #1a0dab;
+    text-decoration: none;
+    padding: 0 3px;
+}
+
+.offer-row div > a:hover{
+
+    text-decoration: underline;
+  
+}
 
 
 .row-3{
 height: 15%;    width:100%;
 
-    background-color: #f2f2f2;
-    font-size: 15px;
+ 
+font-size: 14px;
     color: #70757a;
     display:flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
-
     box-sizing: border-box;
 }
 
@@ -138,22 +184,33 @@ height: 15%;    width:100%;
     color: #4285f4;
     font: 16px/16px roboto-regular, arial, sans-serif;
     position: absolute;
-    right: 636px;
+    right: 640px;
     bottom: 10px;
 }
 .chd-1{
 
     border-bottom: 1px solid #dadce0;
     width:100%;
-    height: 50%;
+    height:45%;
+    background-color: #f2f2f2;
 
 }
- ul{
-    display: block;
+ 
+.chd-3{
+    width:100%;
+    height:10%; 
+}
+
+ul{padding-left: 20px;
+
+
+
+
 }
 ul li{
     display: inline;
-    padding: 5px;
+    padding: 5px 10px;
+    text-align: center;
 }
 
 
@@ -161,28 +218,36 @@ ul li{
     display:flex;
     flex-direction: row;
     width:100%;
-    height: 50%;
+    height: 45%;
+    background-color: #f2f2f2;
 
 }
-
+.ad-row-0{
+    height:12%;
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    width:100%;
+}
 .adv-section{
-text-align: left;
+display:flex;
+justify-content: flex-start;
+align-items: flex-start;
     color: #d93025;
     font-size: 20px;
-
     border-bottom: 1px solid #ebebeb;
-    height:8%;width:100%
+    height:6%;width:100%
 }
-.adv-section div{
-padding: 12px;}
+.adv-section > div{
+padding: 5px 25px}
 
 .adv-txt{
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 80%;
-    padding: 15px;
+    width: 85%;
+    padding: 5px 25px;
   
 }
 
@@ -199,10 +264,11 @@ padding: 12px;}
     outline: 1px solid blue;
 }
 .ad-row2{
-    height: 65%; 
+    height: 67%; 
     width:100%; 
     display: flex;
     flex-direction:column ;
+    padding-top: 30px;
 
 }
 
@@ -244,12 +310,14 @@ padding: 12px;}
     text-align: center;
     cursor: default;
     user-select: none;
-
+opacity: 0.9;
 
 
 
 }
-
+.ad-row2 .btn-row input[type=submit]:hover{
+    opacity: 1;
+}
 input[type=submit]:hover{
     border:1px solid lightgrey
 }
