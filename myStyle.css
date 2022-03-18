@@ -7,7 +7,9 @@ box-sizing: border-box;
 font-family: arial,sans-serif;
 
 }
-
+a{
+    text-decoration: none;
+}
 .container{
 display:flex;
 flex-direction: column;
@@ -246,4 +248,8 @@ padding: 12px;}
 
 
 
+}
+
+input[type=submit]:hover{
+    border:1px solid lightgrey
 }
